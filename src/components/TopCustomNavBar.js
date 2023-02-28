@@ -10,7 +10,7 @@ export default function TopCustomNavBar() {
 
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img style={{ width: '50px' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/centos/centos-original.svg" alt='logo'/>
                         {' '}
                     </Navbar.Brand>

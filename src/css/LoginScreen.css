@@ -1,0 +1,33 @@
+.main-container {
+    width: 400px;
+    height: 380px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.defaultStyle {
+    background:linear-gradient(90deg, rgba(226,225,236,1) 0%, rgba(255,255,255,1) 90%);
+width: 100vw;
+height: 100vh;
+}
+
+.center {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-back-container {
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background:  linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(86,98,246,1) 63%);
+    border-radius: 5px;
+}
+#welcome-back{
+    text-align: center;
+    color: white
+}
