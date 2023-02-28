@@ -1,0 +1,12 @@
+.game-card {
+    width: 350px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.game-card-img {
+    width: 350px;
+    height: 200px;
+}

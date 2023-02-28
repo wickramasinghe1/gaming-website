@@ -8,7 +8,7 @@ export default function TopCustomNavBar() {
     return (
         <>
 
-            <Navbar bg="dark" variant="dark">
+            <Navbar style={{ position: 'fixed', width: '100%', zIndex:99}} bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="/">
                         <img style={{ width: '50px' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/centos/centos-original.svg" alt='logo'/>

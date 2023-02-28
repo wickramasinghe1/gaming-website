@@ -4,9 +4,17 @@ import TopCustomNavBar from '../components/TopCustomNavBar';
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Loader from '../components/LoaderConfig';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function LoginScreen() {
+  const navigate = useNavigate();
+
+  const submitHandler = () => {
+    navigate('/')
+  }
+
   return (
     <div className='defaultStyle'>
       <TopCustomNavBar />
@@ -17,7 +25,7 @@ export default function LoginScreen() {
             <h2 id='welcome-back'>Welcome Back!</h2>
           </div>
           <br />
-          <Form>
+          <Form onSubmit={submitHandler}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Username</Form.Label>
               <Form.Control type="email" placeholder="Enter here" />
@@ -39,6 +47,8 @@ export default function LoginScreen() {
           </Form>
         </div>
       </div>
+
+      <Loader isLoading={false}/>
     </div>
 
   )
