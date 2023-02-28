@@ -1,6 +1,7 @@
 import React from 'react'
 import GameCard from '../components/GameCard';
 import ImageSlider from '../components/ImageSlider'
+import Loader from '../components/LoaderConfig';
 import TopCustomNavBar from '../components/TopCustomNavBar'
 import '../css/HomeScreen.css';
 
@@ -8,6 +9,9 @@ export default function HomeScreen() {
   return (
     <>
       <TopCustomNavBar />
+      <br/>
+      <br/>
+      <br/>
       <div className='--main-container'>
         <ImageSlider/>
         <br/>
@@ -29,6 +33,8 @@ export default function HomeScreen() {
             <GameCard  name={'Game Name 07'} date={'2023-02-22'}/>
         </div>
       </div>
+
+      <Loader isLoading={false}/>
     </>
   )
 }

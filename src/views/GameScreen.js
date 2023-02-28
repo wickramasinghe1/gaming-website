@@ -1,7 +1,22 @@
-import React from 'react'
+import React from 'react';
+import GameLeftSidePanel from '../components/GameLeftSidePanel';
+import GameRightSidePanel from '../components/GameRightSidePanel';
+import TopNavBar from '../components/TopNavBar';
+import '../css/GameScreen.css';
 
 export default function GameScreen() {
   return (
-    <div>GameScreen</div>
+    <>
+      <TopNavBar/>
+      <br/>
+      <br/>
+      <br/>
+
+      <div className='-main-container'>
+        <GameLeftSidePanel/>
+        <GameRightSidePanel/>
+      </div>
+
+    </>
   )
 }

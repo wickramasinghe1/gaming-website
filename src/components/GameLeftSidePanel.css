@@ -1,0 +1,16 @@
+.left-container {
+    width: 20vw;
+    height: 100vh;
+    background-color: #D9D9D9;
+    padding: 20px;
+}
+
+.side-button {
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: #000 1px solid;
+}
+
+#logout {
+    color: red;
+}

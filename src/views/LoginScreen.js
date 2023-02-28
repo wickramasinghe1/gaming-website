@@ -12,7 +12,7 @@ export default function LoginScreen() {
   const navigate = useNavigate();
 
   const submitHandler = () => {
-    navigate('/')
+    navigate('/games')
   }
 
   return (
