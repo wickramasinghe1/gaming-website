@@ -29,7 +29,7 @@ export default function GameLeftSidePanel() {
                     reportIsSelect: false,
                     logoutIsSelect: false,
                 })
-            }}>Customers</p>
+            }}>Customers [locked]</p>
             <p className='side-button' style={{fontWeight: selectPanel?.reportIsSelect ? '700': '400'}} onClick={() => {
                 setSelectPanel({
                     gameIsSelect: false,
@@ -37,7 +37,7 @@ export default function GameLeftSidePanel() {
                     reportIsSelect: true,
                     logoutIsSelect: false,
                 })
-            }}> Reports</p>
+            }}> Reports [locked]</p>
             <p className='side-button' id='logout' style={{fontWeight: selectPanel?.logoutIsSelect ? '700': '400'}}
             onClick={() => {
                 setSelectPanel({
