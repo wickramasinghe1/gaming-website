@@ -6,6 +6,7 @@ import TopCustomNavBar from '../components/TopCustomNavBar'
 import '../css/HomeScreen.css';
 import axios from "axios";
 import {baseUrl, getAllGameUrl} from "../Config/urlConfig";
+import moment from "moment/moment";
 
 export default function HomeScreen() {
 
@@ -52,7 +53,7 @@ export default function HomeScreen() {
 
         <div className='--grid-container'>
          {/*get all games*/}
-            {value?.map((item, index) =>  <GameCard  name={item?.gameName} date={item?.gameDate}/>)}
+            {value?.map((item, index) =>  <GameCard imageUrl={item?.imageUrl}  name={item?.gameName} date={moment(item?.gameDate).format('ll')}/>)}
 
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import { IMAGES } from '../assests'
 import './GameCard.css'
 
-export default function GameCard({name='', date=''}) {
+export default function GameCard({imageUrl, name='', date=''}) {
 
     const nameHandler=(value) => {
         return value.length > 70 ?
@@ -13,7 +13,7 @@ export default function GameCard({name='', date=''}) {
         <div  className="game-card">
             <img
                className="game-card-img"
-                src={IMAGES.A1IMG}
+                src={imageUrl ? imageUrl : IMAGES.A1IMG}
                 alt="First slide"
                 style={{borderRadius: '10px'}}
             />
